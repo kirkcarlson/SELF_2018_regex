@@ -1,0 +1,5 @@
+#cat /usr/share/dict/american-english |sed -nE -e "/^(ate|tea|eat)$/p"
+#cat /usr/share/dict/american-english |sed -nE -e "/^([ate][ate][ate])$/p"
+#cat /usr/share/dict/american-english |sed -nE -e "/^[ate]{3}$/p"
+cat /usr/share/dict/american-english |sed -nE -e "/^[sate]{3,7}$/p"
+#grep dog /usr/share/dict/american-english

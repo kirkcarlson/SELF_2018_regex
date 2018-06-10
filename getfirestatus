@@ -1,0 +1,6 @@
+#wget -qO - http://gbtownship.ca/ >gbtownship.ca
+wget -qO - http://gbtownship.ca/
+#wget -qO - http://gbtownship.ca/ | grep 'fire.*png'
+#wget -qO - http://gbtownship.ca/ | sed -nEe '/.*fire-(green|yellow|orange|red)-on.png.*/p'
+#wget -qO - http://gbtownship.ca/ | sed -Ee '/.*fire-(green|yellow|orange|red)-on.png.*/!d'
+#wget -qO - http://gbtownship.ca/ | sed -nEe '/.*fire-(green|yellow|orange|red)-on.png.*/!d' -e '//s//\1/p'

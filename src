@@ -1,0 +1,22 @@
+.TL
+.LI
+.ST stateNumber1 Station Idle State
+.EV offHook Station went off-hook.
+.AC dialToneOn Turn dial tone on.
+.AC stationLEDBusy Turn station LED to busy indication.
+.AC
+...
+.NX stateNumber2 Station Off-hook State
+...
+.TE
+
+
+to assembly language directives:
+stateNumber1:
+	dw	offHook
+	db	end-$
+        dw	dialToneOn
+        dw	stationLEDBusy
+	...
+end:
+        dw	stateNumber2
